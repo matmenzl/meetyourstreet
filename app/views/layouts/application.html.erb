@@ -7,8 +7,19 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+	<nav class="navbar navbar-default navbar-fixed-top">
+	  <div class="container">
+	      <a class="navbar-brand" href="home"> Meetyourstreet
+	        <img alt="" src="" >
+	        <ul class="nav nav-tabs">
+	        	<li><%= link_to "All Statuses", statuses_path %></li>
+	      </a>
+	    </div>
+	  </div>
+	</nav>
+	<div class="container">
 <%= yield %>
+	</div>
 
 </body>
 </html>
